@@ -27,3 +27,5 @@ O banco de dados é composto pelas seguintes tabelas:
 - `Turma_Facilitador`: Relaciona turmas aos facilitadores.
 - `LogStatusUpdate`: Registra alterações no status dos alunos.
 
+## Modelo Entidade-Relacionamento
+![modelagem](https://github.com/davidlgomes/trabalhoModulo2/assets/47571290/46fdd4da-528a-4894-88ec-f0ea0286d392)
