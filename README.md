@@ -27,9 +27,3 @@ O banco de dados é composto pelas seguintes tabelas:
 - `Turma_Facilitador`: Relaciona turmas aos facilitadores.
 - `LogStatusUpdate`: Registra alterações no status dos alunos.
 
-## Como Usar
-
-1. Execute o script `create_database.sql` para criar o banco de dados e as tabelas no MySQL.
-2. Execute o script `insert_data.sql` para inserir dados de teste nas tabelas.
-3. Utilize as consultas SQL fornecidas no arquivo `queries.sql` para realizar análises estratégicas.
-4. Para mais detalhes sobre a estrutura do banco de dados e as consultas disponíveis, consulte a documentação no arquivo `schema.md`.
