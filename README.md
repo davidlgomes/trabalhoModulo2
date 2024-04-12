@@ -29,3 +29,15 @@ O banco de dados é composto pelas seguintes tabelas:
 
 ## Modelo Entidade-Relacionamento
 ![modelagem](https://github.com/davidlgomes/trabalhoModulo2/assets/47571290/46fdd4da-528a-4894-88ec-f0ea0286d392)
+
+## Perguntas
+### Todas as perguntas foram respondidas no próprio script
+As perguntas feitas para gerar os selects foram:
+
+  1. Qual é o número de alunos inscritos em cada curso?
+  2. Qual é a média de idade dos alunos em cada curso?
+  3. Qual é o número total de alunos?
+  4. Quais facilitadores estão associados a mais de uma turma?
+  5. Qual é a porcentagem de evasão em cada turma?
+
+
