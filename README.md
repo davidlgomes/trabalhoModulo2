@@ -1,4 +1,4 @@
-# Sistema de Gerenciamento de Estrutura de Ensino - Resilia
+# Sistema de Gerenciamento de Escolas
 
 Este é um sistema de gerenciamento de estrutura de ensino desenvolvido para a Resilia, uma empresa fictícia que oferece cursos de tecnologia. O sistema permite o armazenamento de informações sobre alunos, facilitadores, turmas, módulos e cursos, bem como a realização de consultas estratégicas.
 
