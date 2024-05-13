@@ -99,8 +99,8 @@ CREATE TABLE escola.matricula (
     status VARCHAR(100) NOT NULL,
     FOREIGN KEY (unidade_fk) REFERENCES escola.instituicao(id_instituicao),
     FOREIGN KEY (id_curso_fk) REFERENCES escola.curso(id_curso),
-    FOREIGN KEY (id_turma_fk) REFERENCES escola.turma(id_turma_pk)
-    FOREIGN KEY (id_aluno_fk) REFERENCES escola.turma(id_aluno)
+    FOREIGN KEY (id_turma_fk) REFERENCES escola.turma(id_turma_pk),
+    FOREIGN KEY (id_aluno_fk) REFERENCES escola.aluno(id_aluno)
 );
 
 CREATE TABLE escola.nota (
