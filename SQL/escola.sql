@@ -105,6 +105,7 @@ CREATE TABLE escola.matricula (
 
 CREATE TABLE escola.nota (
     id_nota SERIAL PRIMARY KEY,
+    nota_aluno FLOAT,
     id_matricula_fk INTEGER,
     id_modulo_fk INTEGER,
     FOREIGN KEY (id_matricula_fk) REFERENCES escola.matricula(id_matricula),
