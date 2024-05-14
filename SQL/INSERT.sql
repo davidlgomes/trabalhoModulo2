@@ -143,18 +143,18 @@ VALUES
 ('Presencial'),
 ('EAD');
 
--- Inserções de turmas para os cursos
-INSERT INTO escola.turma (curso_fk, sala, modalidade_fk, id_instrutor_fk) 
+-- Inserções de turmas para os turmas
+INSERT INTO escola.turma (curso_fk, sala, modalidade_fk, id_instrutor_fk, qtde_alunos, capacidade) 
 VALUES 
 -- Turmas do curso 1 (Técnico de Administração)
-(1, 101, 1, 6),
-(1, 102, 2, 7),
+(1, 101, 1, 6, 10, 50),
+(1, 102, 2, 7, 10, 50),
 -- Turmas do curso 2 (Técnico de Informática)
-(2, 201, 1, 14),
-(2, 202, 2, 15),
+(2, 201, 1, 14, 10, 50),
+(2, 202, 2, 15, 10, 50),
 -- Turmas do curso 3 (Técnico de Enfermagem)
-(3, 301, 1, 2),
-(3, 302, 2, 3);
+(3, 301, 1, 2, 10, 50),
+(3, 302, 2, 3, 10, 50);
 
 -- Matrículas dos cursos para as turmas
 INSERT INTO escola.matricula (unidade_fk, id_curso_fk, id_turma_fk, id_aluno_fk, status) 

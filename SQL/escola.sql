@@ -73,6 +73,8 @@ CREATE TABLE escola.turma (
     sala INTEGER NOT NULL,
     modalidade_fk INTEGER,
     id_instrutor_fk INT,
+    qtde_alunos INT,
+    capacidade INT,
     FOREIGN KEY (curso_fk) REFERENCES escola.curso(id_curso),
     FOREIGN KEY (modalidade_fk) REFERENCES escola.modalidade(id_modalidade),
     FOREIGN KEY (id_instrutor_fk) REFERENCES escola.instrutor(id_instrutor)
