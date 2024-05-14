@@ -147,34 +147,34 @@ VALUES
 INSERT INTO escola.turma (curso_fk, sala, modalidade_fk, id_instrutor_fk, qtde_alunos, capacidade) 
 VALUES 
 -- Turmas do curso 1 (Técnico de Administração)
-(1, 101, 1, 6, 10, 50),
+(1, 101, 1, 7, 10, 50),
 (1, 102, 2, 7, 10, 50),
 -- Turmas do curso 2 (Técnico de Informática)
 (2, 201, 1, 14, 10, 50),
 (2, 202, 2, 15, 10, 50),
 -- Turmas do curso 3 (Técnico de Enfermagem)
-(3, 301, 1, 2, 10, 50),
+(3, 301, 1, 3, 10, 50),
 (3, 302, 2, 3, 10, 50);
 
 -- Matrículas dos cursos para as turmas
 INSERT INTO escola.matricula (unidade_fk, id_curso_fk, id_turma_fk, id_aluno_fk, status) 
 VALUES 
 -- Matrículas do Técnico de Administração - Presencial
-(1, 1, 1, 1, 'Ativo'),
+(1, 1, 1, 1, 'Evadido'),
 (1, 1, 1, 2, 'Ativo'),
 (1, 1, 1, 3, 'Ativo'),
 (1, 1, 1, 4, 'Ativo'),
-(1, 1, 1, 5, 'Ativo'),
+(1, 1, 1, 5, 'Evadido'),
 (1, 1, 1, 6, 'Ativo'),
 (1, 1, 1, 7, 'Ativo'),
-(1, 1, 1, 8, 'Ativo'),
+(1, 1, 1, 8, 'Evadido'),
 (1, 1, 1, 9, 'Ativo'),
 (1, 1, 1, 10, 'Ativo'),
 -- Matrículas do Técnico de Administração - EAD
 (1, 1, 2, 11, 'Ativo'),
-(1, 1, 2, 12, 'Ativo'),
+(1, 1, 2, 12, 'Evadido'),
 (1, 1, 2, 13, 'Ativo'),
-(1, 1, 2, 14, 'Ativo'),
+(1, 1, 2, 14, 'Evadido'),
 (1, 1, 2, 15, 'Ativo'),
 (1, 1, 2, 16, 'Ativo'),
 (1, 1, 2, 17, 'Ativo'),
@@ -182,20 +182,20 @@ VALUES
 (1, 1, 2, 19, 'Ativo'),
 (1, 1, 2, 20, 'Ativo'),
 -- Matrículas do Técnico de Informática - Presencial
-(2, 2, 3, 21, 'Ativo'),
+(2, 2, 3, 21, 'Evadido'),
 (2, 2, 3, 22, 'Ativo'),
-(2, 2, 3, 23, 'Ativo'),
-(2, 2, 3, 24, 'Ativo'),
-(2, 2, 3, 25, 'Ativo'),
-(2, 2, 3, 26, 'Ativo'),
-(2, 2, 3, 27, 'Ativo'),
+(2, 2, 3, 23, 'Evadido'),
+(2, 2, 3, 24, 'Evadido'),
+(2, 2, 3, 25, 'Evadido'),
+(2, 2, 3, 26, 'Evadido'),
+(2, 2, 3, 27, 'Evadido'),
 (2, 2, 3, 28, 'Ativo'),
 (2, 2, 3, 29, 'Ativo'),
 (2, 2, 3, 30, 'Ativo'),
 -- Matrículas do Técnico de Informática - EAD
-(2, 2, 4, 31, 'Ativo'),
+(2, 2, 4, 31, 'Evadido'),
 (2, 2, 4, 32, 'Ativo'),
-(2, 2, 4, 33, 'Ativo'),
+(2, 2, 4, 33, 'Evadido'),
 (2, 2, 4, 34, 'Ativo'),
 (2, 2, 4, 35, 'Ativo'),
 (2, 2, 4, 36, 'Ativo'),
@@ -205,11 +205,11 @@ VALUES
 (2, 2, 4, 40, 'Ativo'),
 -- Matrículas do Técnico de Enfermagem - Presencial
 (3, 3, 5, 41, 'Ativo'),
-(3, 3, 5, 42, 'Ativo'),
+(3, 3, 5, 42, 'Evadido'),
 (3, 3, 5, 43, 'Ativo'),
 (3, 3, 5, 44, 'Ativo'),
 (3, 3, 5, 45, 'Ativo'),
-(3, 3, 5, 46, 'Ativo'),
+(3, 3, 5, 46, 'Evadido'),
 (3, 3, 5, 47, 'Ativo'),
 (3, 3, 5, 48, 'Ativo'),
 (3, 3, 5, 49, 'Ativo'),
@@ -217,11 +217,11 @@ VALUES
 -- Matrículas do Técnico de Enfermagem - EAD
 (3, 3, 6, 51, 'Ativo'),
 (3, 3, 6, 52, 'Ativo'),
-(3, 3, 6, 53, 'Ativo'),
+(3, 3, 6, 53, 'Evadido'),
 (3, 3, 6, 54, 'Ativo'),
 (3, 3, 6, 55, 'Ativo'),
-(3, 3, 6, 56, 'Ativo'),
+(3, 3, 6, 56, 'Evadido'),
 (3, 3, 6, 57, 'Ativo'),
-(3, 3, 6, 58, 'Ativo'),
+(3, 3, 6, 58, 'Evadido'),
 (3, 3, 6, 59, 'Ativo'),
 (3, 3, 6, 60, 'Ativo');
