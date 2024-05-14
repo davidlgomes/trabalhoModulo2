@@ -4,29 +4,30 @@ Este é um sistema de gerenciamento de estrutura de ensino desenvolvido para a R
 
 ## Funcionalidades
 
-- Armazenamento de dados sobre alunos, facilitadores, turmas, módulos e cursos em um banco de dados MySQL.
-- Consultas estratégicas para análise de dados:
-  - Quantidade total de estudantes cadastrados no sistema.
-  - Pessoas facilitadoras que atuam em mais de uma turma.
-  - Porcentagem de estudantes com status de evasão por turma.
-  - Trigger para registrar alterações no status dos alunos em uma tabela de log.
-  - Consulta personalizada que combina informações de pelo menos três tabelas.
+- Registro de Alunos: Permite o cadastro de alunos, incluindo informações como nome, CPF, idade, gênero, e-mail e endereço.
+- Registro de Cursos: Permite o cadastro de cursos oferecidos pela instituição, incluindo informações como nome do curso, duração, área e modalidade (presencial ou EAD).
+- Registro de Instrutores: Permite o cadastro de instrutores que ministram aulas nos cursos, incluindo informações como nome, especialidade e CPF.
+- Registro de Instituições: Permite o cadastro das unidades da instituição de ensino, incluindo informações como endereço e nome da unidade.
+- Gerenciamento de Matrículas: Permite o registro das matrículas dos alunos nos cursos, associando cada aluno a uma turma específica de um curso.
+- Registro de Turmas e Módulos: Permite o cadastro de turmas e módulos dos cursos, incluindo informações como sala, modalidade, número de módulo, quantidade de aulas e carga horária.
+- Registro de Notas: Permite o registro das notas dos alunos em cada módulo do curso, facilitando o acompanhamento do desempenho acadêmico.
+- Rastreamento de Atualizações: Inclui um mecanismo de rastreamento de atualizações de status das matrículas dos alunos, registrando as mudanças de status ao longo do tempo.
 
 ## Estrutura do Banco de Dados
 
 O banco de dados é composto pelas seguintes tabelas:
-
-- `Aluno`: Armazena informações sobre os alunos.
-- `Facilitador`: Armazena informações sobre os facilitadores.
-- `Turma`: Armazena informações sobre as turmas.
-- `Modulo`: Armazena informações sobre os módulos dos cursos.
-- `Curso`: Armazena informações sobre os cursos.
-- `Aluno_Turma`: Relaciona alunos às turmas.
-- `Turma_Modulo`: Relaciona turmas aos módulos.
-- `Curso_Modulo`: Relaciona cursos aos módulos.
-- `Turma_Facilitador`: Relaciona turmas aos facilitadores.
-- `LogStatusUpdate`: Registra alterações no status dos alunos.
-
+- `endereço`: Armazena informações sobre endereços, como rua, número, cidade, CEP, estado e país. Utilizada para registrar os endereços dos alunos, instrutores e instituições.
+- `modalidade`: Armazena os tipos de modalidade de curso, como presencial ou EAD (Ensino a Distância). Utilizada para diferenciar o tipo de modalidade oferecida em uma turma de curso.
+- `disciplina`: Armazena informações sobre as disciplinas oferecidas nos cursos. Utilizada para registrar as disciplinas ministradas em cada módulo de curso.
+- `curso`: Armazena informações sobre os cursos oferecidos pela instituição, como nome do curso, duração, área e número total de dias. Utilizada para registrar os cursos disponíveis.
+- `instrutor`: Armazena informações sobre os instrutores que ministram as aulas nos cursos, como nome, especialidade e CPF. Utilizada para registrar os dados dos instrutores.
+- `aluno`: Armazena informações sobre os alunos matriculados nos cursos, como nome, CPF, idade, gênero, email e ID de endereço. Utilizada para registrar os dados dos alunos.
+- `instituição`: Armazena informações sobre as instituições de ensino, como endereço, nome da unidade e ID de endereço. Utilizada para registrar os dados das instituições.
+- `turma`: Armazena informações sobre as turmas dos cursos, como sala, modalidade, ID de instrutor e ID de curso. Utilizada para registrar as turmas disponíveis para os cursos.
+- `modulo`: Armazena informações sobre os módulos dos cursos, como número do módulo, quantidade de aulas, carga horária e ID de disciplina. Utilizada para registrar os módulos de cada curso.
+- `matricula`: Armazena informações sobre as matrículas dos alunos nos cursos, como ID da unidade, ID do curso, ID da turma, ID do aluno e status da matrícula. Utilizada para registrar as matrículas dos alunos nos cursos.
+- `nota`: Armazena informações sobre as notas dos alunos em cada módulo do curso, como ID da matrícula e ID do módulo. Utilizada para registrar as notas dos alunos em cada módulo.
+- `log_atualizacao_status_estudante`: Armazena registros de atualizações de status das matrículas dos alunos, como ID do log, ID do estudante, status novo e data de atualização. Utilizada para registrar as atualizações de status das matrículas.
 ## Modelo Entidade-Relacionamento
 ![image](https://github.com/davidlgomes/trabalhoModulo2/assets/163933962/15d57cef-476b-4407-a1ae-bfe321445d7c)
 
