@@ -46,3 +46,18 @@ JOIN porcentagem_evasao_por_turma p ON t.id_turma_pk = p.id_turma_pk
 JOIN escola.curso c ON t.curso_fk = c.id_curso
 WHERE c.id_curso = 3;
 
+
+CREATE VIEW Porcentagem_Evasao_Por_Turma AS
+SELECT 
+    t.ID AS id_turma,
+    COUNT(CASE WHEN e.status_evasao = TRUE THEN 1 END) AS qtd_evasao,
+    COUNT(*) AS total_estudantes,
+    ROUND((COUNT(CASE WHEN e.status_evasao = TRUE THEN 1 END) * 100.0 / COUNT(*)), 2) AS percentual_evasao
+FROM 
+    Turma AS t
+LEFT JOIN 
+    Estudante AS e ON t.ID = e.id_turma
+GROUP BY 
+    t.ID
+ORDER BY 
+    percentual_evasao DESC;
