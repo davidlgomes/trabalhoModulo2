@@ -113,3 +113,10 @@ CREATE TABLE escola.nota (
     FOREIGN KEY (id_matricula_fk) REFERENCES escola.matricula(id_matricula),
     FOREIGN KEY (id_modulo_fk) REFERENCES escola.modulo(id_modulo)
 );
+
+CREATE TABLE escola.log_atualizacao_status_estudante (
+    id_log SERIAL PRIMARY KEY,
+    id_estudante INTEGER REFERENCES escola.aluno(id_aluno),
+    status_novo VARCHAR(100),
+    data_atualizacao TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
