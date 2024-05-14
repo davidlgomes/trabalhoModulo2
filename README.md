@@ -35,13 +35,15 @@ O banco de dados é composto pelas seguintes tabelas:
 ### Todas as perguntas foram respondidas no próprio script
 As perguntas feitas para gerar os selects foram:
 
-  1. Qual é o número de alunos inscritos em cada curso?
-  2. Qual é a média de idade dos alunos em cada curso?
-  3. Qual é o número total de alunos?
-  4. Quais facilitadores estão associados a mais de uma turma?
-  5. Qual é a porcentagem de evasão em cada turma?
-
-
+#### 1 - Quantidade de alunos
+#### 2 - Professores que atuam em mais de uma turma 
+#### 3 - Porcentagem Evasão por turma
+#### 4 - Atualização a cada update de status de matrícula
+#### 5 - Quais são os alunos matriculados em uma turma específica de um curso em uma instituição específica?
+#### 6 - Quais são os instrutores que ministram aulas em turmas de um curso específico?
+#### 7 - Quantos alunos estão matriculados em cada turma de um curso específico?
+#### 8 - Quais são os alunos que estão matriculados em um determinado curso em uma instituição específica?
+#### 9 - Qual é a porcentagem de evasão em cada turma de um curso específico?
 
 ![Screenshot 2024-05-13 at 21-19-45 SE SENAC - CNseg M2 Projeto em grupo - 1711051470881_BD0D__ SE SENAC - CNseg M2 Projeto em grupo pdf](https://github.com/davidlgomes/trabalhoModulo2/assets/47571290/53f02dc8-7330-4018-9a71-df7d26169121)
 ![Screenshot 2024-05-13 at 21-19-58 SE SENAC - CNseg M2 Projeto em grupo - 1711051470881_BD0D__ SE SENAC - CNseg M2 Projeto em grupo pdf](https://github.com/davidlgomes/trabalhoModulo2/assets/47571290/edfeb2b5-2999-41d7-97fc-eb3899477c9f)
